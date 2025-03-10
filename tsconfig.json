@@ -1,0 +1,50 @@
+{
+  "compilerOptions": {
+    "target": "ES2019",
+    "module": "ESNext",
+    "strict": false,
+    "skipLibCheck": true,
+    "jsx": "preserve",
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "strictPropertyInitialization": false,
+    "noImplicitAny": false,
+    "noImplicitReturns": false,
+    "noImplicitThis": false,
+    "noStrictGenericChecks": false,
+    "suppressImplicitAnyIndexErrors": true,
+    "downlevelIteration": true,
+    "allowJs": true,
+    "checkJs": false,
+    "allowUnreachableCode": true,
+    "allowUnusedLabels": true,
+    "skipDefaultLibCheck": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "types": [
+      "webpack-env",
+      "jest",
+      "vuetify",
+      "webpack"
+      // "vue-cli-plugin-apollo/types"
+    ],
+    "paths": {
+      "@/*": ["src/*"],
+      "*": ["./@types/*"]
+    },
+    "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "tests/**/*.ts",
+    "tests/**/*.tsx"
+  ],
+  "exclude": ["node_modules", "src/stories/*"]
+}
